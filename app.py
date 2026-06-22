@@ -28,7 +28,7 @@ with st.sidebar:
     st.divider()
     st.header("② 측정 파일")
     files = st.file_uploader("CSV 업로드", type=["csv"], accept_multiple_files=True)
-    st.caption("IV는 −2~0 / 0~2 분할 파일 2개를 함께 올리면 자동 병합됩니다.")
+    st.caption("IV 분할 측정은 음/양 두 파일을 함께 올리면 자동 병합됩니다 (−7~0 + 0~7 등 어떤 ± 범위든 OK).")
 
 if not files:
     st.info("◀ 왼쪽에서 시료 정보를 입력하고 CSV를 업로드하세요.")
